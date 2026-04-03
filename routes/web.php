@@ -8,5 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/latest-prices', function (){
-    return Price::latest()->take(4)->get();
+    return Price::latest()->take(2)->get();
 });
